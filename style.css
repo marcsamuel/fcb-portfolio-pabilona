@@ -1,0 +1,77 @@
+/*
+    To Add a comment in CSS:
+    ctrl+shift+/
+    CSS
+    CSS is used for styling our web page.It has its own syntax 
+    or way of coding writing from HTML.
+
+    Syntax:
+
+    * (selector) {
+        property: value;
+    }
+
+    */
+
+    /*universal - all elements*/
+    * {
+        font-family:"Roboto", sans-serif;
+    }
+
+    /*type - select particular tags*/
+    h1,h2 {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    img {
+        height: 250px;
+        width: 250px;
+    }
+
+/*id selector - #idName*/
+#landing {
+    /*vh -viewport height - measurement based on the height of the web page and the device you're currently viewing the page in.*/
+    height: 80vh;
+    /*We can manipulate the contents of an element using flexbox*/
+    /*By default, arranges the content of an element in a row.*/
+    display: flex;
+    /*Arrange the contents of an element with flex, as a column*/
+    flex-direction: column;
+    /*center all contents of an element with flex as a column (horizontally)*/
+    align-items: center;
+    /*center all contents of an element with flex as a column (vertically)*/
+    justify-content: center;
+}
+
+#gallery {
+    height: 75vh;
+    /*center the contents of #gallery section horizontally ad vertically using flex.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    /* hex decimal can be added as a value for color. This is will us to specify a particular color.*/
+    color: #007bff;
+}
+
+/*class selector - .className*/
+.tools {
+    border: 5px solid #f2f2f2;
+    padding: 25px;
+    margin: 20px;
+    height: 200px;
+
+    width: 75%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
